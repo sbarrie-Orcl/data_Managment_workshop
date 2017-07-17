@@ -172,7 +172,8 @@ service.
 -   Under My Services &gt; Select Data Center … select the region from
     the drop down list. Your instructor will provide this information to
     you prior the course.
-    <img src="./media/image4.png" width="576" height="301" />
+    
+ <img src="./media/image4.png" width="576" height="301" />
 
 <!-- -->
 
@@ -2184,8 +2185,9 @@ you’re ready.
     archivelog;
 
 
-Section 4: Database Development
-====================
+
+4.  Database Development
+    ====================
 
     4.  ### Introduction
 
@@ -2193,7 +2195,7 @@ In this lab you will deploy an APEX application to the Alpha Clone PDB
 and adjust the firewall rules to support access to the application from
 the Internet using a PC based browser or mobile device.
 
-### <span id="_Toc463095767" class="anchor"><span id="_Toc487716158" class="anchor"></span></span>Objectives
+### <span id="_Toc463095767" class="anchor"><span id="_Toc469067138" class="anchor"></span></span>Objectives
 
 -   Enable APEX in the Alpha Clone PDB.
 
@@ -2210,7 +2212,7 @@ the Internet using a PC based browser or mobile device.
 
 -   The SSH tunnels must be active in a terminal window.
 
-    1.  ### <span id="_Toc463095770" class="anchor"><span id="_Toc487716160" class="anchor"></span></span>Alpha Office and APEX
+    1.  ### <span id="_Toc463095770" class="anchor"><span id="_Toc469067140" class="anchor"></span></span>Alpha Office and APEX
 
         1.  #### **<span style="font-variant:small-caps;">APEX Workspace Administration</span>**
 
@@ -2247,25 +2249,24 @@ database.
 
 -   Expand it and click on the **SecurityUsers** item.
 
-<img src="./media/image1.png" width="576" height="155" />
+<img src="./media7/image1.png" width="272" height="408" />
 
 -   Right-mouse on **APEX\_LISTENER** and select **Unlock User…**
 
-<img src="./media/image2.png" width="336" height="165" />
+<img src="./media7/image2.png" width="336" height="165" />
 
 -   Click the **Apply** button to unlock APEX\_LISTENER. You may also
     use the SQL tab to review the unlock statement.
 
-<img src="./media/image3.png" width="203" height="192" />
-
-<img src="./media/image4.png" width="203" height="192" />
+<img src="./media7/image3.png" width="203" height="192" />
+<img src="./media7/image4.png" width="203" height="192" />
 
 -   Repeat the **Unlock User…** operation for the
     **APEX\_REST\_PUBLIC\_USER**.
 
-<img src="./media/image5.png" width="419" height="234" />
+<img src="./media7/image5.png" width="419" height="234" />
 
-<img src="./media/image6.png" width="213" height="202" />
+<img src="./media7/image6.png" width="213" height="202" />
 
 #### **<span style="font-variant:small-caps;">Create the Alpha Office workspace </span>**
 
@@ -2278,7 +2279,7 @@ database.
 
 **https://&lt;your-Public-IP&gt;/apex/alphaclone/apex\_admin**
 
-<img src="./media/image7.png" width="509" height="383" />
+<img src="./media7/image7.png" width="509" height="383" />
 
 -   After you’ve accepted the SSL certificate and see the APEX
     administration page, enter the following admin credentials and click
@@ -2288,7 +2289,7 @@ database.
 |---------------|-------------|
 | **Password:** | Alpha2014\_ |
 
-<img src="./media/image8.png" width="283" height="232" />
+<img src="./media7/image8.png" width="283" height="232" />
 
 -   You ***may*** be prompted to change the ADMIN user password, if not,
     skip to the next step. These credentials apply to the APEX objects
@@ -2302,14 +2303,14 @@ database.
 | **Enter New Password:**     | Alpha2015!  |
 | **Confirm New Password: **  | Alpha2015!  |
 
-<img src="./media/image9.png" width="270" height="338" />
+<img src="./media7/image9.png" width="270" height="338" />
 
 -   After logging in successfully, feel free to click around in the APEX
     interface to get familiar with it.
 
 -   When you’re ready to begin, click the **Create Workspace** button
 
-<img src="./media/image10.png" width="477" height="192" />
+<img src="./media7/image10.png" width="477" height="192" />
 
 -   At the **Identify Workspace** dialog, enter the following workspace
     name and click the **Next** button.
@@ -2317,20 +2318,20 @@ database.
 | **Workspace Name:** | AlphaDev |
 |---------------------|----------|
 
-<img src="./media/image11.png" width="466" height="258" />
+<img src="./media7/image11.png" width="566" height="258" />
 
 -   At the **Identify Schema** dialog, select and enter the following
     values followed by the **Next** button.  
       
     **Note:** Use the search icon
-    <img src="./media/image12.png" width="22" height="21" /> to find the
+    <img src="./media7/image12.png" width="22" height="21" /> to find the
     ALPHA schema.
 
 | **Re-use existing schema?** | Yes   |
 |-----------------------------|-------|
 | **Schema Name:**            | ALPHA |
 
-<img src="./media/image13.png" width="376" height="105" />
+<img src="./media7/image13.png" width="605" height="256" />
 
 At the **Identify Administrator** dialog, enter the following values and
 click the **Next** button.
@@ -2340,27 +2341,27 @@ click the **Next** button.
 | **Administrator Password:** | Alpha2014\_ (May be prompted to change) |
 | **Email:**                  | dummy@localhost.localdomain             |
 
-<img src="./media/image14.png" width="553" height="232" />
+<img src="./media7/image14.png" width="553" height="232" />
 
 -   Review the selections on the Confirm Request page and then click the
     **Create Workspace** button.
 
-<img src="./media/image15.png" width="464" height="197" />
-<img src="./media/image16.png" width="457" height="154" />
+<img src="./media7/image15.png" width="464" height="197" />
+<img src="./media7/image16.png" width="457" height="154" />
 
 -   APEX will display the ‘Workspace Created’ message
 
 -   Click **Done**
 
-<img src="./media/image17.png" width="260" height="106" />
+<img src="./media7/image17.png" width="460" height="106" />
 
 -   Click the ADMIN dropdown in the upper right and select **Signout**
 
-<img src="./media/image18.png" width="395" height="122" />
+<img src="./media7/image18.png" width="595" height="122" />
 
 -   Click the Return to **‘Sign In Page’** to continue
 
-<img src="./media/image19.png" width="394" height="199" />
+<img src="./media7/image19.png" width="394" height="199" />
 
 #### **<span style="font-variant:small-caps;">Build REST services</span>**
 
@@ -2372,7 +2373,7 @@ click the **Next** button.
 | **Username:**  | ADMIN       |
 | **Password:**  | Alpha2014\_ |
 
-<img src="./media/image20.png" width="26" height="22" />
+<img src="./media7/image20.png" width="260" height="285" />
 
 -   You ***may*** be prompted to change your password. Enter the
     following values and click the **Apply Changes** button.
@@ -2382,20 +2383,20 @@ click the **Next** button.
 | **Enter New Password**     | Alpah2015!  |
 | **Confirm New Password **  | Alpha2015!  |
 
-<img src="./media/image9.png" width="416" height="271" />
+<img src="./media7/image9.png" width="216" height="271" />
 
 -   Once you’ve logged in successfully, click the **SQL
     Workshop** button.
 
-<img src="./media/image21.png" width="377" height="148" />
+<img src="./media7/image21.png" width="477" height="148" />
 
 -   Click the **RESTful Services** button.
 
-<img src="./media/image22.png" width="317" height="128" />
+<img src="./media7/image22.png" width="617" height="128" />
 
 -   Click the **Create &gt;** button
 
-<img src="./media/image23.png" width="364" height="69" />
+<img src="./media7/image23.png" width="564" height="69" />
 
 -   There are three sections on the RESTful Services page:
 
@@ -2407,7 +2408,7 @@ click the **Next** button.
 
 -   Resource Handler
 
-<img src="./media/image24.png" width="376" height="485" />
+<img src="./media7/image24.png" width="576" height="485" />
 
 -   Fill out the information for these sections using the information
     provided below.
@@ -2421,14 +2422,14 @@ click the **Next** button.
 |-----------------|--------------|
 | **URI Prefix:** | alphaofc/    |
 
-<img src="./media/image25.png" width="26" height="26" />
+<img src="./media7/image25.png" width="522" height="261" />
 
 -   In the **Resource Template** section enter the following value:
 
 | **URI Template** | products/ |
 |------------------|-----------|
 
-<img src="./media/image26.png" width="436" height="168" />
+<img src="./media7/image26.png" width="436" height="168" />
 
 -   For the last section titled **Resource Handler** use the following
     values:
@@ -2439,11 +2440,11 @@ click the **Next** button.
 | **Format:**      | JSON                    |
 | **Source:**      | select \* from products |
 
-<img src="./media/image27.png" width="422" height="204" />
+<img src="./media7/image27.png" width="422" height="204" />
 
 -   Click **Create Module** to complete the REST service creation.
 
-<img src="./media/image28.png" width="197" height="47" />
+<img src="./media7/image28.png" width="197" height="47" />
 
 -   APEX will show the new service module with a confirmation message.
 
@@ -2452,20 +2453,20 @@ click the **Next** button.
 -   Click the **GET** handler for our template in the folder structure
     on the left of the screen.
 
-<img src="./media/image29.png" width="500" height="162" />
+<img src="./media7/image29.png" width="500" height="162" />
 
 -   Review the definition.
 
 -   Since this operation has no parameters, we can easily test it by
     clicking the **Test** button.
 
-<img src="./media/image30.png" width="438" height="521" />
+<img src="./media7/image30.png" width="438" height="521" />
 
 -   Review the JSON produced by the service.
 
 -   Click the browser's **back button** to return to the APEX page.
 
-<img src="./media/image31.png" width="575" height="219" />
+<img src="./media7/image31.png" width="575" height="219" />
 
 #### **<span style="font-variant:small-caps;">Create a Parameterized REST Service</span>**
 
@@ -2476,7 +2477,7 @@ click the **Next** button.
 
 -   Click the **Create Template** link.
 
-<img src="./media/image32.png" width="339" height="219" />
+<img src="./media7/image32.png" width="339" height="219" />
 
 -   Enter the following URI Template.
 
@@ -2489,14 +2490,14 @@ queries.
 | **URI Template:** | product/{id} |
 |-------------------|--------------|
 
-<img src="./media/image33.png" width="389" height="136" />
+<img src="./media7/image33.png" width="389" height="136" />
 
 -   APEX displays a success message for the new template
 
 -   Click the **Create Handler** link under the **product/{id}**
     template on the left side of the screen.
 
-<img src="./media/image34.png" width="582" height="151" />
+<img src="./media7/image34.png" width="582" height="151" />
 
 -   Enter the following SQL statement in the Source field of the
     Resource Handler page. Notice the use of the ":id" bind variable,
@@ -2514,7 +2515,7 @@ where product\_id = :id
 -   Once you’ve finished entering the SQL statement, click the
     **Create** button.
 
-<img src="./media/image35.png" width="443" height="369" />
+<img src="./media7/image35.png" width="443" height="369" />
 
 -   Notice the ‘Action Processed’ at the top of your screen. We will
     test this service just like before, but we need to provide a product
@@ -2525,14 +2526,14 @@ where product\_id = :id
 -   **Scroll** to the bottom of the page and in the Test section, click
     the **Set Bind Variables** button.
 
-<img src="./media/image36.png" width="582" height="91" />
+<img src="./media7/image36.png" width="582" height="91" />
 
 -   Enter the following product number and click the **Test** button.
 
 | **:ID** | 1020 |
 |---------|------|
 
-<img src="./media/image37.png" width="582" height="315" />
+<img src="./media7/image37.png" width="582" height="315" />
 
 -   In the new browser window, notice only the single product shows in
     the JSON object.
@@ -2541,43 +2542,43 @@ where product\_id = :id
 
 -   **Close** this pop-up window.
 
-> <img src="./media/image38.png" width="575" height="129" />
+> <img src="./media7/image38.png" width="575" height="129" />
 
 #### **<span style="font-variant:small-caps;">Install APEX Mobile Application</span>**
 
 -   Click the **Application Builder** menu item on the APEX page.
 
-<img src="./media/image39.png" width="313" height="112" />
+<img src="./media7/image39.png" width="413" height="112" />
 
 -   Click the **Import** button on the Application Builder page.
 
-<img src="./media/image40.png" width="376" height="138" />
+<img src="./media7/image40.png" width="376" height="138" />
 
 -   Click the **Browse** button to locate the APEX application
     export file.
 
-<img src="./media/image41.png" width="522" height="329" />
+<img src="./media7/image41.png" width="522" height="329" />
 
 -   Locate and open the following file and click the Open button:
 
 **/u01/OPCWorkshop/lab/f101.sql**
 
-<img src="./media/image42.png" width="280" height="175" />
+<img src="./media7/image42.png" width="280" height="175" />
 
 -   Click the **Next** button to continue.
 
-<img src="./media/image43.png" width="87" height="58" />
+<img src="./media7/image43.png" width="87" height="58" />
 
 -   After a brief pause while the application file is processed, click
     the **Next** button to continue.
 
-<img src="./media/image44.png" width="481" height="211" />
+<img src="./media7/image44.png" width="481" height="211" />
 
 -   On the final page, select to **Reuse Application ID 101 from Export
     File**
 
 -   Click **Install Application**.
-    <img src="./media/image45.png" width="415" height="365" />
+    <img src="./media7/image45.png" width="415" height="365" />
 
 <!-- -->
 
@@ -2585,13 +2586,13 @@ where product\_id = :id
 
 -   Click **Run** **Application**.
 
-<img src="./media/image46.png" width="376" height="184" />
+<img src="./media7/image46.png" width="376" height="184" />
 
 -   APEX renders the first page of the mobile application in the browser
     – it might not look quite right since we are using a
     mobile template.
 
-<img src="./media/image47.png" width="194" height="174" />
+<img src="./media7/image47.png" width="194" height="174" />
 
 #### **<span style="font-variant:small-caps;">Access the Alpha Office Mobile Application on your Smart Device</span>**
 
@@ -2606,24 +2607,21 @@ where product\_id = :id
 **https://&lt; Public IP Address of
 Alpha01A-DBCS&gt;/apex/alphaclone/f?p=101**
 
-<img src="./media/image48.png" width="158" height="279" />
+<img src="./media7/image48.png" width="158" height="279" />
 
 -   The browser should prompt you to accept the unknown certificate.
 
 -   Click of touch **Continue**.
 
-<img src="./media/image49.png" width="158" height="281" />
+<img src="./media7/image49.png" width="158" height="281" />
 
 -   Touch the screen to explore the application. On the device, touching
     one of the pie slices highlights the slice; a second tap drills into
     that slice.
 
-<img src="./media/image50.png" width="158" height="279" />
+<img src="./media7/image50.png" width="158" height="279" />
 
 -   Congratulations, you’ve created an application on the Oracle
     Database Cloud. This is the final lab for the DBCS Workshop.
-
-
-
 
 
